@@ -5,6 +5,8 @@ import {
 import SearchBar from '../components/SearchBar'
 
 const mapStateToProps = state => ({
+  fetchedQuery: state.fetchedQuery,
+  hits: state.hits,
   value: state.query
 })
 

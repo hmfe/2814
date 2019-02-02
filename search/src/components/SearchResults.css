@@ -1,0 +1,11 @@
+.SearchResults {
+  background-color: #ffffff;
+  margin: 0 20px 15px;
+  border: 1px solid #d9d9d9;
+  height: 300px;
+  overflow: auto;
+}
+
+.SearchResults-item {
+  padding: 20px;
+}

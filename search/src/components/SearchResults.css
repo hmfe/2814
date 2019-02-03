@@ -1,11 +1,19 @@
 .SearchResults {
   background-color: #ffffff;
-  margin: 0 20px 15px;
-  border: 1px solid #d9d9d9;
-  height: 300px;
+  margin: 0 5px 25px;
+  border: 1px solid #cfcfcf;
+  height: 150px;
   overflow: auto;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #2d2d2d;
 }
 
 .SearchResults-item {
-  padding: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.SearchResults-item:hover {
+  background-color: #d9d9d9;
 }

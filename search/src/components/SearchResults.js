@@ -18,12 +18,12 @@ class SearchResults extends Component {
   }
 
   render() {
-    const { hits, query } = this.props
+    const { hits, query, selectResult } = this.props
 
     return (
       <div className="SearchResults">
         {hits.map((result, index) => (
-          <div key={index} className="SearchResults-item">
+          <div key={index} role="button" aria-label={result} className="SearchResults-item" onClick={() => selectResult(result)}>
             {this.highlightedResult(result, query)}
           </div>
         ))}

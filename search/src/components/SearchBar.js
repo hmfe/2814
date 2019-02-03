@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import SearchClear from './SearchClear'
 import SearchResults from './SearchResults'
 import './SearchBar.css'
 
 class SearchBar extends Component {
   render() {
-    const { clearInput, fetchedQuery, fetchQueryResult, hits, placeholder, value } = this.props
+    const { clearInput, fetchedQuery, fetchQueryResult, hits, placeholder, selectResult, value } = this.props
 
     return (
-      <div>
+      <Fragment>
         <div className="SearchBar">
           <input 
             className="SearchBar-input" 
@@ -15,10 +16,10 @@ class SearchBar extends Component {
             placeholder={placeholder}
             value={value}
           />
-          <button className="SearchBar-clear" onClick={clearInput}>×</button>
+          <SearchClear onClick={clearInput} />
         </div>
-        {hits.length > 0 && <SearchResults hits={hits} query={fetchedQuery} />}
-      </div>
+        {hits.length > 0 && <SearchResults hits={hits} query={fetchedQuery} selectResult={selectResult} />}
+      </Fragment>
     )
   }
 }

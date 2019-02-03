@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import {
-  fetchQueryResult
+  fetchQueryResult,
+  addToHistory
 } from '../store'
 import SearchBar from '../components/SearchBar'
 
@@ -12,7 +13,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
   fetchQueryResult: query => fetchQueryResult({ query }),
-  clearInput: () => fetchQueryResult({ query: '' })
+  clearInput: () => fetchQueryResult({ query: '' }),
+  selectResult: name => addToHistory({ name })
 }
 
 

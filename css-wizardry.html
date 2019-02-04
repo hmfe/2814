@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS-wizardry</title>
+  <style>
+    .delete-button {
+      background-color: #f1a95c;
+      border: 2px solid #808080;
+      color: #000000;
+      padding: 30px 15px;
+      text-align: left;
+      font-size: 30px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      cursor: pointer;
+      position: relative;
+      width: 210px;
+    }
+
+    .delete-button:after {
+      content: "×";
+      font-size: 60px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      background-color: #ffffff;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -40px;
+      border-radius: 50%;
+      text-align: center;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+</head>
+
+<body>
+  <button class="delete-button" type="button">Delete</button>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.SearchClear {
+  width: 20px;
+  padding: 0;
+  margin-left: 30px;
+  font-size: 40px;
+  color: #a0a0a0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.SearchClear:hover {
+  color: #2d2d2d;
+}
+
